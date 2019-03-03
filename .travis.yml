@@ -3,6 +3,11 @@ language: java
 jdk:
  - oraclejdk11
 
+addons:
+  sonarcloud:
+organization: "Tommaso Peletta" # the key of the org you chose at step #3
+
 script:
  - mvn clean install
+ - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 
