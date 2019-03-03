@@ -24,6 +24,6 @@ public class HelloWorldEndpoint {
 	@Path("/plusage/{name}")
 	public String hello_name(@PathParam("name") String name,
 			@DefaultValue("25") @QueryParam("age") int age) {
-		return "hello "+name+"! Nice to see you! You are " + age + " years old";
+		return "helloh "+name+"! Nice to see you! You are " + age + " years old";
 	}
 }
