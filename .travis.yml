@@ -9,9 +9,5 @@ addons:
 
 script:
  - mvn clean install
- - mvn sonar:sonar \
-  -Dsonar.projectKey=TommasoPeletta_Test-sysadmin \
-  -Dsonar.organization=tommasopeletta-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=f0d348407d2d203feff061ac0947e813dc94ff25
+ - mvn sonar:sonar -Dsonar.projectKey=TommasoPeletta_Test-sysadmin -Dsonar.organization=tommasopeletta-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=f0d348407d2d203feff061ac0947e813dc94ff25
 
