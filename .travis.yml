@@ -5,9 +5,13 @@ jdk:
 
 addons:
   sonarcloud:
-organization: "Tommaso Peletta" # the key of the org you chose at step #3
+    organization: "tommasopeletta-github" # the key of the org you chose at step #3
 
 script:
  - mvn clean install
- - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+ - mvn sonar:sonar \
+  -Dsonar.projectKey=TommasoPeletta_Test-sysadmin \
+  -Dsonar.organization=tommasopeletta-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=f0d348407d2d203feff061ac0947e813dc94ff25
 
